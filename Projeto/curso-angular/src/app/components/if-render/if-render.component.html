@@ -1,0 +1,11 @@
+<h1>Componente com diretiva If</h1>
+<div class="class">
+    <div *ngIf="possoMostrar"> Esse conteudo aqui foi permitido a visualizacao</div>
+    <div *ngIf="Nome === 'Professor'; else nameNotFound"> O nome é Professor
+       
+    </div>
+    <ng-template #nameNotFound>
+        <div > Nome não encontrado</div>
+    </ng-template>
+
+</div>

@@ -1,0 +1,39 @@
+/* Estilo para o título */
+h1 {
+    font-size: 2rem; /* Define o tamanho da fonte */
+    color: #2c3e50;  /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+  }
+  
+  /* Estilo para os parágrafos */
+  p {
+    font-size: 1rem; /* Define o tamanho da fonte */
+    color: #34495e;  /* Cor do texto */
+    line-height: 1.5; /* Altura da linha */
+    margin: 10px 0;  /* Margens superior e inferior */
+    padding: 10px;   /* Espaçamento interno */
+    border: 1px solid #ecf0f1; /* Borda ao redor dos parágrafos */
+    border-radius: 5px; /* Arredondamento das bordas */
+    background-color: #f9f9f9; /* Cor de fundo */
+  }
+  
+  /* Estilo para o parágrafo específico dos esportes */
+  p:nth-of-type(4) {
+    font-weight: bold; /* Negrito */
+    color: #e74c3c; /* Cor do texto */
+  }
+  
+  /* Estilo para o parágrafo específico do modelo de carro */
+  p:last-of-type {
+    font-style: italic; /* Itálico */
+    color: #3498db; /* Cor do texto */
+  }
+  
+  /* Estilo adicional para melhorar a apresentação geral */
+  .container {
+    max-width: 800px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza o container */
+    padding: 20px; /* Espaçamento interno */
+  }
+  
