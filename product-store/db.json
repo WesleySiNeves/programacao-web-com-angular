@@ -1,0 +1,58 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Product 1",
+      "price": 10.99,
+      "description": "Alteracao 2"
+    },
+    {
+      "id": "2",
+      "name": "Product 2",
+      "price": 20.99,
+      "description": "Meu produto 2"
+    },
+    {
+      "id": "8998",
+      "name": "arroz",
+      "price": "19",
+      "description": "teste"
+    },
+    {
+      "id": "1eab",
+      "name": "Feijao ",
+      "price": "15",
+      "description": "Feijão caro"
+    },
+    {
+      "id": "2242",
+      "name": "",
+      "price": 0,
+      "description": ""
+    },
+    {
+      "id": "a681",
+      "name": "",
+      "price": 0,
+      "description": ""
+    },
+    {
+      "id": "d5be",
+      "name": "",
+      "price": 0,
+      "description": ""
+    },
+    {
+      "id": "57d8",
+      "name": "teste",
+      "price": "10",
+      "description": "teste"
+    },
+    {
+      "id": "c21b",
+      "name": "",
+      "price": 0,
+      "description": ""
+    }
+  ]
+}

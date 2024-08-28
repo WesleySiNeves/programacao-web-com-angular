@@ -8,11 +8,14 @@ import { EventsComponent } from "./components/events/events.component";
 import { EmitterComponent } from "./components/emitter/emitter.component";
 import { ListRenderComponent } from "./components/list-render/list-render.component";
 import { TwoWayBindingComponent } from "./components/two-way-binding/two-way-binding.component";
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FirstComponentComponent, ParentDataComponent, DirectivesComponent, IfRenderComponent, EventsComponent, EmitterComponent, ListRenderComponent, TwoWayBindingComponent],
+  imports: [RouterOutlet, FirstComponentComponent, ParentDataComponent, 
+    DirectivesComponent, IfRenderComponent, EventsComponent, EmitterComponent, 
+    ListRenderComponent, TwoWayBindingComponent,RouterModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
