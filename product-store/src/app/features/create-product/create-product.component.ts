@@ -1,37 +1,34 @@
 import { Component, inject } from '@angular/core';
-import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { MatButtonModule } from '@angular/material/button';
-import {MatFormFieldModule} from '@angular/material/form-field'
-import { MatInputModule } from '@angular/material/input';
 import { ProductsService } from '../../shared/services/products.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { FormComponent } from '../../shared/components/form/form.component';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Product } from '../../shared/Interfaces/product.interface';
 
 
 @Component({
   selector: 'app-create-product',
   standalone: true,
-  imports: [ReactiveFormsModule,MatFormFieldModule,MatInputModule,MatButtonModule],
+  imports: [FormComponent],
   templateUrl: './create-product.component.html',
   styleUrl: './create-product.component.css'
 })
 export class CreateProductComponent {
 
-  productsService = inject(ProductsService);
-  matSnackBar = inject(MatSnackBar)
-
-    form = new FormGroup({
-    name : new FormControl<string>('',{nonNullable:true,validators: Validators.required}),
-    price : new FormControl<number>(0,{nonNullable:true,validators: Validators.required}),
-    description : new FormControl<string>('',{nonNullable:true}),
   
-      })
+    productsService = inject(ProductsService);
+    matSnackBar = inject(MatSnackBar)
+    router = inject(Router);
 
-    onSubmit()
+    product:Product = inject(ActivatedRoute).snapshot.data['product'];
+
+
+    onSubmit(parametro: Product)
     {
       this.productsService.post({
-        name :this.form.controls.name.value,
-        price :this.form.controls.price.value,
-        description :this.form.controls.description.value
+        name :parametro.name,
+        price :parametro.price,
+        description :parametro.description
 
 
       }).subscribe( () => {
